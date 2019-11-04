@@ -1,0 +1,152 @@
+/****************************************************************************************
+Description: Style layer class helper
+*****************************************************************************************/
+
+.wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.oveflow {
+    overflow: hidden;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.lay-internal {
+    position: relative;
+}
+
+.line-h {
+    h3,
+    .h3,
+    h2 {
+        position: relative;
+        border-bottom: 2px solid #1e1c1c;
+        padding-bottom: 11px;
+        letter-spacing: 2px;
+    }
+}
+
+.grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.style-ul {
+    list-style-type: none;
+    li {
+        position: relative;
+        &:before {
+            position: absolute;
+            left: -10px;
+            top: 10px;
+            content: "";
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: #61c100;
+        }
+    }
+}
+
+.touch {
+    * {
+        cursor: pointer;
+    }
+}
+
+.bg {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-img-center {
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.bg-img-right {
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.bg-img-left {
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+.bg-center {
+    background-position: center center;
+}
+
+.bg-bottom {
+    background-position: bottom center;
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+    position: relative;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.height100 {
+    height: 100%;
+}
+
+.bg-inhert {
+    background-color: inherit;
+}
+
+.ps-as {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.ps-rv {
+    position: relative;
+}
+
+.ps-stt {
+    position: static;
+}
+
+.clear {
+    clear: both;
+    padding: 0px !important;
+    display: block;
+    height: 0 !important;
+}
+
+.error {
+    color: red;
+}
+
+@media only screen and (min-width: $min-sm) {}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {}
+
+@media only screen and (max-width: 991px) and (min-width: $min-sm) {}
+
+@media only screen and (max-device-width: 1050px) {
+    .touch {
+        * {
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and(max-width: $max-sm) {}
+
+@media only screen and (max-width: 480px) {}
+
+@media screen and (max-width: 767px) and (orientation:landscape) {}

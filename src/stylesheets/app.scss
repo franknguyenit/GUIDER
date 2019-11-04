@@ -1,0 +1,35 @@
+@import 'normalize';
+@import 'base/setting';
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "./node_modules/slick-carousel/slick/slick.scss";
+@import 'lib/slick-theme';
+@import 'lib/iconmoon';
+@import 'lib/font-awesome';
+
+/*base*/
+
+@import 'base/mixins';
+@import 'base/base';
+@import 'base/button';
+@import 'base/space';
+@import 'base/custom';
+@import 'base/form';
+@import 'base/globalsite';
+@import 'base/font';
+
+/*component*/
+
+@import 'component/breadcrumb';
+@import 'component/loading';
+@import 'component/pagination';
+@import 'component/row-padding';
+@import 'component/social';
+@import 'component/tags';
+
+/*modules*/
+
+@import 'module/header';
+@import 'module/footer';
+@import 'module/home';
+@import 'module/animation';
+@import 'module/about';

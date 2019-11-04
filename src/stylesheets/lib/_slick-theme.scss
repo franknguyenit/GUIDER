@@ -1,0 +1,180 @@
+@charset 'UTF-8';
+
+/* Slider */
+
+.slick-loading .slick-list {
+    background: #fff url('../images/ajax-loader.gif') center center no-repeat;
+}
+
+
+/* Icons */
+
+@font-face {
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
+}
+
+
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    display: block;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: transparent;
+    background: transparent;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 25px;
+}
+
+[dir='rtl'] .slick-prev {
+    right: -25px;
+    left: auto;
+}
+
+.slick-next {
+    right: 25px;
+}
+
+[dir='rtl'] .slick-next {
+    right: auto;
+    left: -25px;
+}
+
+.pull-left {
+    left: -70px;
+}
+
+.pull-right {
+    left: 35px;
+}
+
+
+/* Dots */
+
+.slick-dotted.slick-slider {
+    margin-bottom: 30px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    margin: 0 8px;
+    padding: 0;
+    cursor: pointer;
+    margin-bottom: 0;
+    &:before {
+        display: none;
+    }
+    &.slick-active,
+    &:hover {
+        button {
+            background: $blue;
+        }
+    }
+}
+
+.slick-dots li button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    border: 2px solid $blue;
+    color: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+    outline: none;
+}
+
+.item-slide img {
+    width: 100%;
+}
+
+.full-height {
+    height: 100vh;
+    background-size: cover!important;
+    background-position: center!important;
+}
+
+.btn-video-click img {
+    width: inherit;
+}
+
+.slick-slide {
+    position: relative;
+}
+
+.btn-video-click {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    img {
+        height: auto;
+        display: inline-block;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .banner-top,
+    .item-slide img {
+        height: auto;
+    }
+    .pull-left {
+        left: 25px;
+    }
+    .pull-right {
+        left: inherit;
+    }
+    .full-height {
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .banner-top,
+    .item-slide img {
+        height: auto;
+    }
+    .pull-left {
+        left: 25px;
+    }
+    .pull-right {
+        left: inherit;
+    }
+    .full-height {
+        height: 40vh;
+    }
+}

@@ -1,0 +1,141 @@
+.text-line {
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    padding-left: 0;
+}
+
+.show.bootstrap-select.btn-group .dropdown-toggle .caret.fa-angle-down:before {
+    content: "\f106";
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    &:focus {
+        border-color: $red;
+        box-shadow: none;
+    }
+}
+
+.bootstrap-select.show {
+    .dropdown-menu {
+        display: block;
+    }
+}
+
+.bootstrap-select.btn-group:not(.input-group-btn),
+.bootstrap-select.btn-group[class*="col-"] {
+    width: 100% !important;
+    display: block;
+    &.open {
+        .bs-caret {
+            .caret {
+                border-bottom: 5px dashed;
+                border-bottom: 5px solid \9;
+                border-right: 5px solid transparent;
+                border-left: 5px solid transparent;
+                border-top: none;
+            }
+        }
+    }
+    .dropdown-toggle {
+        float: none;
+        width: 100%;
+        white-space: nowrap;
+        font-weight: normal;
+        font-size: 1em;
+        height: auto;
+        box-shadow: none;
+        color: inherit;
+        line-height: 1.2em;
+        border-radius: 0px;
+        font-weight: 400;
+        min-width: 0;
+        text-transform: none;
+        background-color: inherit;
+        &:focus {
+            outline-offset: inherit !important;
+            outline: none !important;
+        }
+        &:after {
+            display: none;
+        }
+        .caret {
+            right: 28px;
+            margin-top: -7px;
+            border: none !important;
+        }
+        .filter-option {
+            padding-right: 18px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+    .dropdown-menu {
+        padding: 0;
+        font-size: 1em;
+        bottom: auto;
+        top: 100%;
+        border-radius: 0;
+        margin-top: 0;
+        width: 100%;
+        box-shadow: none!important;
+        ul.dropdown-menu {
+            max-height: 500px !important;
+            border: none;
+        }
+        li {
+            padding: 0;
+            letter-spacing: 0px;
+            border-top: 1px solid;
+            margin-bottom: 0;
+            font-size: 1em;
+            &:before {
+                display: none !important;
+            }
+            &:first-child {
+                border-top: none;
+            }
+            a {
+                line-height: 1.2em;
+                color: inherit;
+                border-radius: 0px;
+                font-weight: 400;
+                display: block;
+                background: transparent;
+                cursor: pointer;
+                font-size: 1em;
+                white-space: normal;
+                font-style: normal;
+                .glyphicon {
+                    display: none;
+                }
+                &:hover,
+                &.selected,
+                &:focus {
+                    color: inherit;
+                    background-color: #e8e8e9;
+                }
+            }
+            &:hover a,
+            &.selected a,
+            &:focus a {
+                color: inherit;
+                background-color: #e8e8e9;
+            }
+            &:frist-child {
+                border-top: none;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 1199px) {}
+
+@media only screen and(max-width: 991px) and(min-width: $min-sm) {}
+
+@media only screen and(max-width: $max-sm) {}

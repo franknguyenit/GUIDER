@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese');
+
+/*font-family body*/
+
+$font-family-base: 'Verdana',
+sans-serif;
+
+/*font-family other*/
+
+$mo: 'Verdana',
+sans-serif;
+$ro: 'Roboto',
+sans-serif;
+$op: 'Open Sans',
+sans-serif;
+$font-awesome: FontAwesome;
+
+/*set screen*/
+
+$grid-breakpoints: ( // Extra small screen / phone
+xs: 0, // Small screen / phone
+sm: 576px, // Medium screen / tablet
+md: 768px, // Large screen / desktop
+lg: 960px, // Extra large screen / wide desktop
+xl: 2000px);
+$container-max-widths: ( sm: 540px,
+md: 767px,
+lg: 1232px,
+xl: 2000px);
+
+/*color body*/
+
+$body-color: #262626;
+
+/*color heading*/
+
+$color-h: #35261e;
+$color-h2: #64564d;
+$color-menu: #222533;
+
+/*color custom*/
+
+$blue: #42e6e5;
+$color1: #42e6e5;
+$hover: #31353d;
+$gray: #e6e7e8;
+$gray2: #464646;
+$bg: #1a2026;
+$red1: #CB3439;
+$red-color:#801F23;
+
+/*menu*/
+
+$menu-main-color: #bbb7b4;
+$menu-main-color-active: #7f6392;
+$menu-level2-color: #004c3b;
+$menu-main-color-last: #91a73b;
+$menu-main-color-last-hover: white;
+$menu-main-bg-last-hover: #91a73b;
+$color-h1: #fefefe;
+
+/*link color*/
+
+$link-color: #CB3439;
+$link-hover-color: #AD1F23;
+$link-hover-decoration: underline;
+$property:#f16a2a;
+$capital:#01326b;
+$education: #1fc3f3;
+$ibt:#008e8d;
+$fdi:#AD1F23;
+
+/*Color system*/
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+$grays: ( 100: $gray-100,
+200: $gray-200,
+300: $gray-300,
+400: $gray-400,
+500: $gray-500,
+600: $gray-600,
+700: $gray-700,
+800: $gray-800,
+900: $gray-900) !default;
+$blue: #42e6e5 !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #952428 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #7cbf47 !default;
+$teal: #20c997 !default;
+$cyan: #7cbf47 !default;
+$colors: ( blue: $blue,
+indigo: $indigo,
+purple: $purple,
+pink: $pink,
+red: $red,
+orange: $orange,
+yellow: $yellow,
+green: $green,
+teal: $teal,
+cyan: $cyan,
+white: $white,
+gray: $gray-600,
+gray-dark: $gray-800) !default;
+$theme-colors: ( primary: $blue,
+secondary: $gray-600,
+success: $green,
+info: $cyan,
+warning: $yellow,
+danger: $red,
+light: $gray-300,
+dark: $gray-800) !default;
+
+/*btn custom*/
+
+$btn-font-weight: 700;
+$btn-info-border: $link-color;
+$btn-info-bg: $link-color;
+$btn-primary-color: #fff !default;
+$btn-primary-border: $blue !default;
+$btn-primary-bg: $red !default;
+$border-radius-base: 50px !default;
+$border-radius-large: 50px !default;
+$border-radius-small: 50px !default;
+
+/*font size*/
+
+@function rem($pixels,
+$context: 16) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+    @return $pixels / $context * 1rem;
+}
+
+$font-b: 15;
+$fontpx: 15px;
+$font-mb-px: 18px;
+$font-bm: 18;
+$mfont-b: 18;
+$font-c: 15;
+$font-xs: 18;
+
+/*set style body*/
+
+$font-size-base: rem(15);
+$line-height-base: 24/15 !default;
+$font-weight-base: 400;
+$body-bg: #fff;
+
+/*font heading*/
+
+$h1-font-size: rem(36);
+$h2-font-size: rem(28);
+$h3-font-size: rem(24);
+$h4-font-size: rem(17);
+$h5-font-size: rem(16);
+$h6-font-size: rem(14);
+$h-title-size: rem(32);
+
+/*heading custom*/
+
+$headings-font-weight: 400 !default;
+$headings-line-height: 30/24;
+$headings-color: $color-h;
+$headings-uppercase: uppercase;
+$headings-margin-bottom: 20px;
+
+/*.form-control*/
+
+$input-btn-padding-y: rem(10);
+$input-btn-padding-x: rem(20);
+$input-btn-line-height: 1.2;
+$input-color: $color-h;
+$input-bg: $body-bg;
+$input-btn-border-width: 1px;
+$input-border-color: #eee;
+$input-border-radius: 0;
+
+/*.breadcrumb*/
+
+$breadcrumb-padding-y: rem(1);
+$breadcrumb-padding-x: rem(0);
+$breadcrumb-bg: #fff;
+$min-sm: 768px;
+$max-sm: 767px;
+
+/*extend css*/
+
+%add-tr {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}

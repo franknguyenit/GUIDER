@@ -1,0 +1,106 @@
+.footer {
+    position: relative;
+    background-color: $red;
+    color: #fff;
+    text-align: center;
+}
+
+.scrollTop {
+    position: fixed;
+    right: 10px;
+    bottom: 45px;
+    width: 35px;
+    height: 35px;
+    background-color: $red;
+    color: #fff;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+    a {
+        position: absolute;
+        display: block;
+        color: inherit;
+        font-size: 1.25rem;
+        line-height: 1.2;
+        padding: 0 11px;
+        top: 5%;
+        left: 0;
+        -webkit-animation: ani-mouse 1.5s linear infinite;
+        -moz-animation: ani-mouse 1.5s linear infinite;
+        animation: ani-mouse 1.5s linear infinite;
+        text-decoration: blink;
+    }
+}
+
+@-webkit-keyframes ani-mouse {
+    0% {
+        top: 5%;
+    }
+    50% {
+        top: 20%;
+    }
+    100% {
+        top: 5%;
+    }
+}
+
+@-moz-keyframes ani-mouse {
+    0% {
+        top: 5%;
+    }
+    50% {
+        top: 20%;
+    }
+    100% {
+        top: 5%;
+    }
+}
+
+@keyframes ani-mouse {
+    0% {
+        top: 5%;
+    }
+    50% {
+        top: 20%;
+    }
+    100% {
+        top: 5%;
+    }
+}
+
+.br-contact {
+    border-left: 1px solid $red;
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 130px 130px;
+        border-color: #952428 transparent;
+    }
+}
+
+.imm-text {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+    .imm-text {
+        bottom: 60px;
+        left: 10px;
+        img {
+            width: 200px;
+        }
+    }
+    .bg-inside {
+        background: none;
+    }
+    .touch .card-member {
+        opacity: 1;
+    }
+}

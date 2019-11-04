@@ -1,0 +1,15 @@
+.DS_Store
+.sass-cache
+.publish
+.idea
+yarn.lock
+gulpfile.js/config.local.js
+deploy
+Desktop.ini
+node_modules
+public
+**/generated/_icons.sass
+npm-debug.log
+
+
+

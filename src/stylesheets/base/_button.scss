@@ -1,0 +1,15 @@
+.btn {
+    font-size: rem(16);
+    box-shadow: none !important;
+    text-transform: uppercase;
+    line-height: (32/16)+em;
+    z-index: 1;
+    white-space: normal;
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    cursor: pointer;
+    padding: 5px 25px;
+}
