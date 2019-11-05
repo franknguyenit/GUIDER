@@ -1,188 +1,62 @@
-{% extends 'layouts/application.html' %}{% block bodyClass %}class="home-page"{% endblock %} {% block header %} {% include "modules/header.html" %} {% endblock %} {% block content %} {% include "modules/banner.html" %}
+{% extends 'layouts/application.html' %}{% block bodyClass %}class="home-page"{% endblock %} {% block header %}
+{% include "modules/header.html" %} {% endblock %} {% block content %} {% include "modules/banner.html" %}
 <div class="loader"></div>
 
-<section id="whatwedo" class="pt-5 pb-5">
+<section id="about" class="pt-5 pb-5">
     <div class="container">
-        <div class="col-lg-12 text-center">
-            <h2 class="simple-title"><b>CHÚNG TÔI LÀM GÌ?</b></h2>
-            <p class="text-center">
-                <span class="sub-title-line">Sau 14 năm học hỏi, xây dựng và kết giao với hơn 50 công ty, tập đoàn trên thế giới, hiện tại IMM Group là một tập đoàn tư vấn đầu tư & quản lý kế thừa di sản gia đình</span>
-            </p>
-        </div>
-        <div class="row mt-5">
-            <div class="col-md-6 whatwedo_col mb-5 mb-md-0">
-                <div class="whatwedo-img text-center ani-left">
-                    <img src="../images/home-page/Home-1.png" alt="Home-1">
-                    <div class="whatwedo_wrap text-left">
-                        <div class="whatwedo_title">
-                            <span class="number">1.</span>
-                            <span><b>Quản lý kế thừa di sản gia đình:</b></span>
-                        </div>
-                        <div class="whatwedo_content">
-                            <p>- Lập kế hoạch kế thừa tài chính an toàn cho gia đình</p>
-                            <p>- Đa dạng hóa phân khúc đầu tư quốc tế, hạn chế rủi ro tài chính trong tương lai </p>
-                            <p>- Lấy quốc tịch và thường trú toàn cầu: tự do đi lại và tự do kinh doanh toàn cầu </p>
-                        </div>
+        <div class="row">
+            <div class="col-md-5 px-5">
+                <div class="title-home">
+                    <span>...</span><span>01.</span>
+                    <h2>Giới thiệu tổng quan</h2>
+                    <div class="cart-abount">
+                        <p>Guider JCS với đội ngũ gồm những thành viên trẻ trung, sáng tạo, có kiến thức, kỹ năng cũng
+                            như kinh nghiệm sâu rộng trong nhóm ngành dịch vụ, nhà hàng – khách sạn.
+                            Chúng tôi tập trung vào sự nghiên cứu, tư vấn, mang đến các giải pháp nhằm củng cố, nâng cao
+                            năng lực cạnh tranh và phát triển doanh nghiệp cho các đối tác.</p>
                     </div>
                 </div>
+
             </div>
-            <div class="col-md-6 whatwedo_col">
-                <div class="whatwedo-img text-center ml-auto ani-right">
-                    <img src="../images/home-page/Home-2.png" alt="Home-1">
-                    <div class="whatwedo_wrap text-left">
-                        <div class="whatwedo_title">
-                            <span class="number">2.</span>
-                            <span><b>Tư vấn đầu tư</b></span>
-                        </div>
-                        <div class="whatwedo_content">
-                            <div>
-                                <p>- Đầu tư ra nước ngoài: giúp nhà đầu tư tiếp cận nhiều cơ hội đầu tư ra nước ngoài, đa dạng hóa danh mục đầu tư, lập kế hoạch di sản tài chính cho thế hệ con cháu </p>
-                                <p class="circle"></p>
-                                <p>- Đầu tư nước ngoài vào Việt Nam: kết nối, tạo điều kiện cho các doanh nghiệp Việt Nam mua bán, sáp nhập doanh nghiệp với các tập đoàn lớn nước ngoài vào Việt Nam. Tư vấn quy trình, thủ tục quản lý đầu tư cho nhà đầu tư
-                                    nước ngoài vào Việt Nam</p>
+            <div class="col-md-7 pr-5">
+                <section class="banner-top">
+                    <div id="slideabout" class="carousel  slide  carousel-fade" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/about.jpg" alt="Los Angeles">
+                                <div class="content-about">
+                                        <h3>Tại Sao Là Chúng Tôi?</h3>
+                                        <p class="mb-0">Với thông điệp “Đưa bạn đến thành công” chúng tôi tự tin sẽ đem đến cho bạn những giải pháp, chiến lược phù hợp nhất với doanh nghiệp của bằng các gói dịch vụ tư vấn, đưa ra giải pháp thực tế và chuyên nghiệp</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/about.jpg"
+                                    alt="Los Angeles">
+                                    <div class="content-about">
+                                            <h3>Làm Như Thế Nào?</h3>
+                                            <p class="mb-0">Thông qua những kế hoạch chi tiết cũng như các giải pháp cá nhân chuyên biệt cho từng khách hàng, chúng tôi sẽ đưa doanh nghiệp của bạn sẽ dễ dàng tối ưu hóa khách hàng cũng như thị trường mục tiêu.</p>
+                                    </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/about.jpg" alt="Los Angeles">
+                                <div class="content-about">
+                                        <h3>Chúng Tôi Làm Gì?</h3>
+                                        <p class="mb-0">Chúng tôi luôn thiết lập và vận hành các dự án mà đảm bảo doanh nghiệp được chuẩn bị vững chắc từ ban đầu với tỉ lệ thành công cao nhất. Ngoài ra, chúng tôi cũng cung cấp dịch vụ đào tạo để tăng cường chất lượng cho đội ngũ nhân viên của doanh nghiệp bằng những kỹ năng và kiến thức sâu rộng trong ngành dịch vụ nhà hàng khách sạn.</p>
+                                </div>
                             </div>
                         </div>
+                        <a class="carousel-control-up" href="#slideabout" data-slide="prev">
+                            <i class="fa fa-angle-up" aria-hidden="true"></i>
+                        </a>
+                        <a class="carousel-control-down" href="#slideabout" data-slide="next">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
     </div>
 </section>
-<section id="founder" class="p-5 bg-white">
-    <div class="row">
-        <div class="col-sm-6 col-lg-6 pl-5">
-            <div class="founder-left ">
-                <img class="col-100" src="/images/bg-our-people-x1-7.png" />
-            </div>
 
-        </div>
-        <div class="col-lg-6">
-            <div class="founder-right text-center pt-5 pb-5">
-                <img src="/images/bod-30-5.png" />
-            </div>
-        </div>
-        <div class="col-lg-12 text-xs-center ">
-            <div class="pb-5 pl-5 ">
-                <a href="#!" class="btn btn-danger">Xem chi tiết</a>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="partner" class="pt-5 pb-5 parallax-window" data-parallax="scroll" data-bleed="10" data-image-src="/images/partner.jpg">
-
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <h2 class="title-h2">ĐỐI TÁC</h2>
-        </div>
-        <div class="col-lg-12 pb-3">
-            <img src="/images/partner-logo.png" />
-        </div>
-
-        <div class="col-lg-12 text-center">
-            <a href="#!" class="btn btn-danger">Xem chi tiết</a>
-        </div>
-    </div>
-</section>
-<section id="member">
-    <div class="row row-0">
-        <div class="col-md-2 bg-product">
-            <div class="content-product">
-                <div class="title-product text-center p-2 no-position">
-                    <img src="/images/up-br.png">
-                    <div class="title-pro-all text-white ">
-                        Kế hoạch quản lý gia sản & lập kế hoạch kế thừa
-                    </div>
-                    <img src="/images/down-br.png">
-                </div>
-                <div class="link-product link-all">
-                    <a href="https://www.immigration.com.vn/" target="_blank">Xem toàn bộ<br>các dịch vụ</a>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-md-10">
-            <div data-module="slideBanner">
-                <div class="list-banner-product">
-                    <div class="item-slide-product">
-                        <img class="desktop-image col-100" src="images/product01.png" alt="banner-home.jpg">
-                        <img class="mobile-image col-100" src="images/product01-mobile.jpg" alt="banner-home.jpg">
-                        <div class="content-product">
-                            <div class="title-product">
-                                <span>1</span>THƯỜNG TRÚ - <br>QUỐC TỊCH THỨ HAI
-                            </div>
-                            <div class="link-product">
-                                <a href="https://www.immigration.com.vn/" target="_blank">Đến website</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-slide-product">
-                        <img class="desktop-image col-100" src="images/product02.png" alt="banner-home.jpg">
-                        <img class="mobile-image col-100" src="images/product02-mobile.jpg" alt="banner-home.jpg">
-                        <div class="content-product">
-                            <div class="title-product">
-                                <span>2</span>BẤT ĐỘNG SẢN<br>NƯỚC NGOÀI
-                            </div>
-                            <div class="link-product">
-                                <a href="https://www.imm.property/" target="_blank">Đến website</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-slide-product">
-                        <img class="desktop-image col-100" src="images/product03.png" alt="banner-home.jpg">
-                        <img class="mobile-image col-100" src="images/product03-mobile.jpg" alt="banner-home.jpg">
-                        <div class="content-product">
-                            <div class="title-product">
-                                <span>3</span>QUỸ ĐẦU TƯ<br>NƯỚC NGOÀI
-                            </div>
-                            <div class="link-product">
-                                <a href="https://imm.capital/" target="_blank">Đến website</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-slide-product">
-                        <img class="desktop-image col-100" src="images/product04.png" alt="banner-home.jpg">
-                        <img class="mobile-image col-100" src="images/product04-mobile.jpg" alt="banner-home.jpg">
-                        <div class="content-product">
-                            <div class="title-product">
-                                <span>4</span>TƯ VẤN DU HỌC<br>CHUYÊN BIỆT
-                            </div>
-                            <div class="link-product">
-                                <a href="https://www.imm.education/" target="_blank">Đến website</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-slide-product">
-                        <img class="desktop-image col-100" src="images/product05.png" alt="banner-home.jpg">
-                        <img class="mobile-image col-100" src="images/product05-mobile.jpg" alt="banner-home.jpg">
-                        <div class="content-product">
-                            <div class="title-product">
-                                <span>5</span>DU LỊCH CÔNG TÁC -<br>THƯƠNG MẠI
-                            </div>
-                            <div class="link-product">
-                                <a href="https://imm.travel/vn/" target="_blank">Đến website</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-slide-product">
-                        <img class="desktop-image col-100" src="images/product06.png" alt="banner-home.jpg">
-                        <img class="mobile-image col-100" src="images/product06-mobile.jpg" alt="banner-home.jpg">
-                        <div class="content-product">
-                            <div class="title-product">
-                                <span>6</span>TƯ VẤN ĐẦU TƯ<br>TỪ NƯỚC NGOÀI<br>VÀO VIỆT NAM
-                            </div>
-                            <div class="link-product">
-                                <a href="https://fdi.imm.group/" target="_blank">Đến website</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-</section>
 
 {% endblock %}
