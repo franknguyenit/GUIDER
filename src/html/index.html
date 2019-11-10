@@ -1,62 +1,335 @@
 {% extends 'layouts/application.html' %}{% block bodyClass %}class="home-page"{% endblock %} {% block header %}
 {% include "modules/header.html" %} {% endblock %} {% block content %} {% include "modules/banner.html" %}
-<div class="loader"></div>
+<!--div class="loader"></div-->
 
-<section id="about" class="pt-5 pb-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5 px-5">
-                <div class="title-home">
-                    <span>...</span><span>01.</span>
-                    <h2>Giới thiệu tổng quan</h2>
-                    <div class="cart-abount">
+<section id="about" class="">
+    <div class="container shadow-container">
+        <div class="row row-0 p-5">
+            <div class="col-md-5 pr-5">
+                <div class="">
+                    <div class="title-home">
+                        <h2 class="h1"><span class="text-default">...</span><span
+                                class="number-title font-pt-sans font-weight-bold">01.</span><br>Giới thiệu tổng quan
+                        </h2>
+                    </div>
+                    <div class="cart-about">
                         <p>Guider JCS với đội ngũ gồm những thành viên trẻ trung, sáng tạo, có kiến thức, kỹ năng cũng
                             như kinh nghiệm sâu rộng trong nhóm ngành dịch vụ, nhà hàng – khách sạn.
                             Chúng tôi tập trung vào sự nghiên cứu, tư vấn, mang đến các giải pháp nhằm củng cố, nâng cao
                             năng lực cạnh tranh và phát triển doanh nghiệp cho các đối tác.</p>
+                        <p><img src="images/arrow-icon-right.png"></p>
                     </div>
                 </div>
-
             </div>
-            <div class="col-md-7 pr-5">
+            <div class="col-md-7">
                 <section class="banner-top">
                     <div id="slideabout" class="carousel  slide  carousel-fade" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="images/about.jpg" alt="Los Angeles">
                                 <div class="content-about">
-                                        <h3>Tại Sao Là Chúng Tôi?</h3>
-                                        <p class="mb-0">Với thông điệp “Đưa bạn đến thành công” chúng tôi tự tin sẽ đem đến cho bạn những giải pháp, chiến lược phù hợp nhất với doanh nghiệp của bằng các gói dịch vụ tư vấn, đưa ra giải pháp thực tế và chuyên nghiệp</p>
+                                    <h3 class="font-weight-bold">Tại Sao Là Chúng Tôi?</h3>
+                                    <p class="mb-0">Với thông điệp “Đưa bạn đến thành công” chúng tôi tự tin sẽ đem đến
+                                        cho bạn những giải pháp, chiến lược phù hợp nhất với doanh nghiệp của bằng các
+                                        gói dịch vụ tư vấn, đưa ra giải pháp thực tế và chuyên nghiệp</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="images/about.jpg"
-                                    alt="Los Angeles">
-                                    <div class="content-about">
-                                            <h3>Làm Như Thế Nào?</h3>
-                                            <p class="mb-0">Thông qua những kế hoạch chi tiết cũng như các giải pháp cá nhân chuyên biệt cho từng khách hàng, chúng tôi sẽ đưa doanh nghiệp của bạn sẽ dễ dàng tối ưu hóa khách hàng cũng như thị trường mục tiêu.</p>
-                                    </div>
+                                <img src="images/about2.jpg" alt="Los Angeles">
+                                <div class="content-about">
+                                    <h3>Làm Như Thế Nào?</h3>
+                                    <p class="mb-0">Thông qua những kế hoạch chi tiết cũng như các giải pháp cá nhân
+                                        chuyên biệt cho từng khách hàng, chúng tôi sẽ đưa doanh nghiệp của bạn sẽ dễ
+                                        dàng tối ưu hóa khách hàng cũng như thị trường mục tiêu.</p>
+                                </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="images/about.jpg" alt="Los Angeles">
                                 <div class="content-about">
-                                        <h3>Chúng Tôi Làm Gì?</h3>
-                                        <p class="mb-0">Chúng tôi luôn thiết lập và vận hành các dự án mà đảm bảo doanh nghiệp được chuẩn bị vững chắc từ ban đầu với tỉ lệ thành công cao nhất. Ngoài ra, chúng tôi cũng cung cấp dịch vụ đào tạo để tăng cường chất lượng cho đội ngũ nhân viên của doanh nghiệp bằng những kỹ năng và kiến thức sâu rộng trong ngành dịch vụ nhà hàng khách sạn.</p>
+                                    <h3>Chúng Tôi Làm Gì?</h3>
+                                    <p class="mb-0">Chúng tôi luôn thiết lập và vận hành các dự án mà đảm bảo doanh
+                                        nghiệp được chuẩn bị vững chắc từ ban đầu với tỉ lệ thành công cao nhất. Ngoài
+                                        ra, chúng tôi cũng cung cấp dịch vụ đào tạo để tăng cường chất lượng cho đội ngũ
+                                        nhân viên của doanh nghiệp bằng những kỹ năng và kiến thức sâu rộng trong ngành
+                                        dịch vụ nhà hàng khách sạn.</p>
                                 </div>
                             </div>
                         </div>
                         <a class="carousel-control-up" href="#slideabout" data-slide="prev">
-                            <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            <span aria-hidden="true" class="arrow_carrot-up"></span>
                         </a>
                         <a class="carousel-control-down" href="#slideabout" data-slide="next">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <span aria-hidden="true" class="arrow_carrot-down"></span>
                         </a>
                     </div>
                 </section>
             </div>
         </div>
+
+        <div class="ten-space"></div>
+        <div class="row row-0 p-5">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-11">
+                        <section class="banner-top">
+                            <div id="slideservice" class="carousel  slide  carousel-fade" interval="100000"
+                                data-ride="carousel">
+                                <ol class="carousel-indicators carousel-indicators-numbers">
+                                    <li data-target="#slideservice" data-slide-to="0" class="active">01/<span
+                                            class="max-slide">6</span></li>
+                                    <li data-target="#slideservice" data-slide-to="1">02/<span
+                                            class="max-slide">6</span></li>
+                                    <li data-target="#slideservice" data-slide-to="2">03/<span
+                                            class="max-slide">6</span></li>
+                                    <li data-target="#slideservice" data-slide-to="3">04/<span
+                                            class="max-slide">6</span></li>
+                                    <li data-target="#slideservice" data-slide-to="4">05/<span
+                                            class="max-slide">6</span></li>
+                                    <li data-target="#slideservice" data-slide-to="5">06/<span
+                                            class="max-slide">6</span></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/about.jpg" alt="Los Angeles">
+                                        <div class="content-about">
+                                            <h3 class="h4">Giải Pháp Quản Lý Khách Sạn Toàn Diện</h3>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/about2.jpg" alt="Los Angeles">
+                                        <div class="content-about">
+                                            <h3 class="h4">Quản Lý Tiếp Thị Và Kinh Doanh</h3>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/about.jpg" alt="Los Angeles">
+                                        <div class="content-about">
+                                            <h3 class="h4">Phát Triển Kinh Doanh</h3>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/about.jpg" alt="Los Angeles">
+                                        <div class="content-about">
+                                            <h3 class="h4">Tư Vấn Đầu Tư Bất Động Sản</h3>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/about2.jpg" alt="Los Angeles">
+                                        <div class="content-about">
+                                            <h3 class="h4">Quản Lý Doanh Thu</h3>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/about.jpg" alt="Los Angeles">
+                                        <div class="content-about">
+                                            <h3 class="h4">Hỗ Trợ Tài Chính Và Kế Toán</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-up" href="#slideservice" data-slide="prev">
+                                    <span aria-hidden="true" class="arrow_carrot-up"></span>
+                                </a>
+                                <a class="carousel-control-down" href="#slideservice" data-slide="next">
+                                    <span aria-hidden="true" class="arrow_carrot-down"></span>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 pl-5">
+                <div class="">
+                    <div class="title-home">
+                        <h2 class="h1"><span class="text-default">...</span><span
+                                class="number-title font-pt-sans font-weight-bold">02.</span><br>Dịch vụ</h2>
+                    </div>
+                    <div class="cart-about">
+                        <ol class="list-service">
+                            <li id="service01" class="active">Giải Pháp Quản Lý Khách Sạn Toàn Diện</li>
+                            <li id="service02">Quản Lý Tiếp Thị Và Kinh Doanh</li>
+                            <li id="service03">Phát Triển Kinh Doanh</li>
+                            <li id="service04">Tư Vấn Đầu Tư Bất Động Sản </li>
+                            <li id="service05">Quản Lý Doanh Thu</li>
+                            <li id="service06">Hỗ Trợ Tài Chính Và Kế Toán</li>
+                        </ol>
+                        <p><img src="images/arrow-icon-left.png"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="six-space"></div>
+        <div class="row">
+            <div class="col-md-12 p-0">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card__hotel">
+                            <div class="card__hotel-bg-photo"
+                                style="background: url('images/about.jpg') center/cover no-repeat;height: 300px;">
+                                <a href="#!" class="link-as"></a>
+                            </div>
+                            <div class="card__hotel-content">
+                                <h4><a href="#!">Khách sạn 1</a></h4>
+                                <p>Guider JCS với đội ngũ gồm những thành viên trẻ trung, sáng tạo, có kiến thức, kỹ
+                                    năng</p>
+                                <p><a href="#!" class="btn btn-default-w">Xem thêm</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card__hotel">
+                            <div class="card__hotel-bg-photo"
+                                style="background: url('images/about.jpg') center/cover no-repeat;height: 300px;">
+                                <a href="#!" class="link-as"></a>
+                            </div>
+                            <div class="card__hotel-content">
+                                <h4><a href="#!">Khách sạn 1</a></h4>
+                                <p>Guider JCS với đội ngũ gồm những thành viên trẻ trung, sáng tạo, có kiến thức, kỹ
+                                    năng</p>
+                                <p><a href="#!" class="btn btn-default-w">Xem thêm</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card__hotel">
+                            <div class="card__hotel-bg-photo"
+                                style="background: url('images/about.jpg') center/cover no-repeat;height: 300px;">
+                                <a href="#!" class="link-as"></a>
+                            </div>
+                            <div class="card__hotel-content">
+                                <h4><a href="#!">Khách sạn 1</a></h4>
+                                <p>Guider JCS với đội ngũ gồm những thành viên trẻ trung, sáng tạo, có kiến thức, kỹ
+                                    năng</p>
+                                <p><a href="#!" class="btn btn-default-w">Xem thêm</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ten-space"></div>
+        <div class="row row-0 p-5">
+            <div class="col-md-5 pr-5">
+                <div class="">
+                    <div class="title-home">
+                        <h2 class="h1"><span class="text-default">...</span><span
+                                class="number-title font-pt-sans font-weight-bold">03.</span><br>Chương trình / <span
+                                class="cousre">Khóa học</span>
+                        </h2>
+                    </div>
+                    <div class="cart-about">
+                        <p>Guider JCS với đội ngũ gồm những thành viên trẻ trung, sáng tạo, có kiến thức, kỹ năng cũng
+                            như kinh nghiệm sâu rộng trong nhóm ngành dịch vụ, nhà hàng – khách sạn.
+                            Chúng tôi tập trung vào sự nghiên cứu, tư vấn, mang đến các giải pháp nhằm củng cố, nâng cao
+                            năng lực cạnh tranh và phát triển doanh nghiệp cho các đối tác.</p>
+                        <p><img src="images/arrow-icon-right.png"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <section class="banner-top">
+                    <div id="slidecousre" class="carousel  slide  carousel-fade" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/about.jpg" alt="Los Angeles">
+                                <div class="content-about">
+                                    <h3 class="font-weight-bold">Khóa học</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/about2.jpg" alt="Los Angeles">
+                                <div class="content-about">
+                                    <h3>Khóa học 1</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-up" href="#slidecousre" data-slide="prev">
+                            <span aria-hidden="true" class="arrow_carrot-up"></span>
+                        </a>
+                        <a class="carousel-control-down" href="#slidecousre" data-slide="next">
+                            <span aria-hidden="true" class="arrow_carrot-down"></span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="six-space"></div>
+        <div class="row row-0 px-5">
+            <div class="col-md-12">
+                <div class="title-home">
+                    <h2 class="h1"><span class="text-default">...</span><span
+                            class="number-title font-pt-sans font-weight-bold">04.</span><br>Dự án
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 px-0">
+                <div data-module="slideBanner">
+                    <div class="list-banner-product">
+                        <div class="item-slide col-md-4">
+                            <div class="card__list_product">
+                                <div class="card__hotel-bg-photo"
+                                    style="background: url('images/about.jpg') center/cover no-repeat;height: 300px;">
+                                    <a href="#!" class="link-as"></a>
+                                </div>
+                                <div class="card__product-content m-0">
+                                    <h4><a href="#!">Dự án 1</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-slide col-md-4">
+                            <div class="card__list_product">
+                                <div class="card__hotel-bg-photo"
+                                    style="background: url('images/about.jpg') center/cover no-repeat;height: 300px;">
+                                    <a href="#!" class="link-as"></a>
+                                </div>
+                                <div class="card__product-content m-0">
+                                    <h4><a href="#!">Dự án 2</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-slide col-md-4">
+                            <div class="card__list_product">
+                                <div class="card__hotel-bg-photo"
+                                    style="background: url('images/about.jpg') center/cover no-repeat;height: 300px;">
+                                    <a href="#!" class="link-as"></a>
+                                </div>
+                                <div class="card__product-content m-0">
+                                    <h4><a href="#!">Dự án 3</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-slide col-md-4">
+                            <div class="card__list_product">
+                                <div class="card__hotel-bg-photo"
+                                    style="background: url('images/about.jpg') center/cover no-repeat;height: 300px;">
+                                    <a href="#!" class="link-as"></a>
+                                </div>
+                                <div class="card__product-content m-0">
+                                    <h4><a href="#!">Dự án 4</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </div>
 </section>
 
-
+<section class="bg-default1 p-5">
+    <div class="container text-center">
+        <h2 class="text-white mb-5">
+            CHÚNG TÔI TẬP TRUNG NGHIÊN CỨU,<br>TƯ VẤN, MANG ĐẾN CÁC GIẢI PHÁP TỐI ƯU
+        </h2>
+        <p class="mb-0"><a href="#!" class="btn btn-default">Liên hệ</a></p>
+    </div>
+</section>
 {% endblock %}

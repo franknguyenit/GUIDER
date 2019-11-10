@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
 @font-face {
-    font-family: 'commerceB';
-    font-display: auto;
-    src: url('../fonts/NBNCOMMERCB.ttf') format("truetype");
+    font-family: 'Elle Futura';
+    src: url('../fonts/ElleFutura-Italic.woff2') format('woff2'),
+        url('../fonts/ElleFutura-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+.font-crete-round{
+    font-family: 'Crete Round', serif;
+}
+.font-pt-sans{
+    font-family: 'PT Sans', sans-serif;
+}
+.font-elle-futura{
+    font-family: 'Elle Futura', sans-serif;
 }

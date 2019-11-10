@@ -50,3 +50,36 @@
 .carousel-control-down {
   bottom: 30px;
 }
+
+
+.carousel-indicators-numbers {
+    right: -87px;
+    left: inherit;
+    bottom: 0;
+    width: 87px;
+    height: 87px;
+    margin: 0;
+    background: $default;
+  li {
+    text-indent: 0;
+    width: auto;
+    height: auto;
+    color: $default1;
+    background-color: $default;
+    transition: all 0.25s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    font-size: rem(30);
+    font-weight: 700;
+    &.active{
+      opacity: 1;      
+    }
+    .max-slide{
+      font-size: rem(15);
+    }
+  }
+}
+

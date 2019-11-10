@@ -25,13 +25,13 @@ export default class slideBanner {
             lazyLoad: 'ondemand',
             autoplay: true,
             autoplaySpeed: 5000,
-            slidesToShow: 5,
+            slidesToShow: 3,
             slidesToScroll: 1,
             rows: 0,
             infinite: true,
-            dots: false,
-            prevArrow: "<button type='button' class='slick-prev pull-left'><img class='img-fluid' src='/images/back-icon.png'></button>",
-            nextArrow: "<button type='button' class='slick-next pull-right'><img class='img-fluid' src='/images/next-icon.png'></button>",
+            dots: true,
+            prevArrow: "<button type='button' class='slick-prev'><span aria-hidden='true' class='arrow_carrot-left'></span></button>",
+            nextArrow: "<button type='button' class='slick-next'><span aria-hidden='true' class='arrow_carrot-right'></span></button>",
             responsive: [{
                     breakpoint: 1024,
                     settings: {

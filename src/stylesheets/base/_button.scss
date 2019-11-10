@@ -1,15 +1,21 @@
-.btn {
-    font-size: rem(16);
-    box-shadow: none !important;
-    text-transform: uppercase;
-    line-height: (32/16)+em;
-    z-index: 1;
-    white-space: normal;
-    position: relative;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    text-transform: uppercase;
-    text-decoration: none !important;
-    cursor: pointer;
-    padding: 5px 25px;
+.btn-default-w{
+    border: 1px solid #6c757d;
+    border-radius: 0;
+    font-weight: 400;
+    &:hover{
+        background: $default;
+        color: #fff;
+        border-color: $default;
+    }
+}
+
+.btn-default{
+    background: $default;
+    color: #fff;
+    font-weight: 400;
+    font-size: rem(20);
+    &:hover{
+        background: $link-hover-color;
+        color: #fff;
+    }
 }

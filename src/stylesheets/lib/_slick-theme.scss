@@ -23,7 +23,7 @@
 .slick-prev,
 .slick-next {
     position: absolute;
-    top: 50%;
+    top: 40%;
     display: block;
     padding: 0;
     -webkit-transform: translate(0, -50%);
@@ -32,9 +32,10 @@
     cursor: pointer;
     border: none;
     outline: none;
-    color: transparent;
+    color: #fff;
     background: transparent;
     z-index: 1;
+    font-size: 50px;
 }
 
 .slick-prev {
@@ -94,7 +95,8 @@
     &.slick-active,
     &:hover {
         button {
-            background: $blue;
+            background: $default;
+            border-color: $default;
         }
     }
 }
@@ -107,8 +109,8 @@
     border-radius: 50%;
     cursor: pointer;
     outline: none;
-    background: transparent;
-    border: 2px solid $blue;
+    background: $default1;
+    border: 2px solid $default1;
     color: transparent;
 }
 
@@ -145,6 +147,17 @@
         display: inline-block;
         cursor: pointer;
     }
+}
+
+.list-banner-product
+{
+  overflow: hidden;
+  .slick-list{
+    margin:0 -15px;
+  }
+  .slick-dots{
+      position: initial;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {

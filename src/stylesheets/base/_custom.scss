@@ -15,41 +15,11 @@ Description: Style layer class helper
     white-space: nowrap;
 }
 
-.lay-internal {
-    position: relative;
-}
 
-.line-h {
-    h3,
-    .h3,
-    h2 {
-        position: relative;
-        border-bottom: 2px solid #1e1c1c;
-        padding-bottom: 11px;
-        letter-spacing: 2px;
-    }
-}
 
 .grayscale {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-}
-
-.style-ul {
-    list-style-type: none;
-    li {
-        position: relative;
-        &:before {
-            position: absolute;
-            left: -10px;
-            top: 10px;
-            content: "";
-            width: 4px;
-            height: 4px;
-            border-radius: 50%;
-            background-color: #61c100;
-        }
-    }
 }
 
 .touch {
@@ -103,28 +73,11 @@ Description: Style layer class helper
     background-color: inherit;
 }
 
-.ps-as {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
+.bg-default{
+    background:$default;
 }
-
-.ps-rv {
-    position: relative;
-}
-
-.ps-stt {
-    position: static;
-}
-
-.clear {
-    clear: both;
-    padding: 0px !important;
-    display: block;
-    height: 0 !important;
+.bg-default1{
+    background:$default1;
 }
 
 .error {
