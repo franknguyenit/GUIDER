@@ -5,7 +5,7 @@
     text-align: center;
 }
 
-.scrollTop {
+.scrollTop-style-01 {
     position: fixed;
     right: 10px;
     bottom: 45px;
@@ -28,6 +28,12 @@
         -webkit-animation: ani-mouse 1.5s linear infinite;
         -moz-animation: ani-mouse 1.5s linear infinite;
         animation: ani-mouse 1.5s linear infinite;
+        text-decoration: blink;
+    }
+}
+.scrollTop-style-02{
+    a{
+        font-size: 60px;
         text-decoration: blink;
     }
 }
