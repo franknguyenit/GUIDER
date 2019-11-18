@@ -8,41 +8,20 @@
 		}
 	}
 	li{
-		display: inline-block;
-		padding:0 19px 0 0;
 		vertical-align: top;
-		line-height: 20px !important;
-		color: #cbcdce;
+		list-style: none;
+		text-align: left;
 		a{
 			display: block;
-			text-align: center;
-			font-size: 22px;
-			color: inherit;
+			font-size: 16px;
+			color:  $default1;
 			text-decoration: none;
 			transition: all .25s;
+			padding-left: 20px;
 			-webkit-transition: all .25s;
-			color: #fff;
-			.fa-facebook{
-				background: #3b5998;
-			}
-			.fa-linkedin{
-				background: #007bb5;
-			}
-			.fa-envelope-o{
-				background: #3b3b3b;
-			}
-			.fa-link{
-				background: #6831b3;
-			}
 			&:hover{
-				transition: .25s all;
-				-webkit-transition: .25s all;
+				color:  $default;
 			}
-			i{
-				padding: 10px;
-    			color: #fff;
-			}
-
 		}
 		
 	}

@@ -13,7 +13,19 @@
     background: $default;
     color: #fff;
     font-weight: 400;
-    font-size: rem(20);
+    font-size: rem(16);
+    &:hover{
+        background: $link-hover-color;
+        color: #fff;
+    }
+}
+.btn-default2{
+    background: #fff;
+    color: $default;
+    font-weight: 400;
+    font-size: rem(16);
+    border-radius: 4px;
+    border: 1px solid $default;
     &:hover{
         background: $link-hover-color;
         color: #fff;

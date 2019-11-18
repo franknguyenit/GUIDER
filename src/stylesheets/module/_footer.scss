@@ -1,7 +1,6 @@
 .footer {
     position: relative;
-    background-color: $red;
-    color: #fff;
+    color: $default1;
     text-align: center;
 }
 
@@ -11,7 +10,7 @@
     bottom: 45px;
     width: 35px;
     height: 35px;
-    background-color: $red;
+    background-color: $default;
     color: #fff;
     cursor: pointer;
     z-index: 999;
@@ -22,7 +21,7 @@
         color: inherit;
         font-size: 1.25rem;
         line-height: 1.2;
-        padding: 0 11px;
+        padding: 3px 6px;
         top: 5%;
         left: 0;
         -webkit-animation: ani-mouse 1.5s linear infinite;
@@ -36,6 +35,37 @@
         font-size: 60px;
         text-decoration: blink;
     }
+}
+.menu-footer{
+    padding: 0;
+        li{
+            line-height: 30px;
+            list-style: none;
+            a{
+                color:  $default1;
+                position: relative;
+                text-decoration: blink;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    width: 30px;
+                    height: 2px;
+                    background: #fff;
+                    transition: all .2s ;
+                }
+                &:hover{
+                    color:  $default;
+                    &::before{
+                        background: $default;
+                    }
+                }
+            }
+            
+        }
+        
+    
 }
 
 @-webkit-keyframes ani-mouse {
