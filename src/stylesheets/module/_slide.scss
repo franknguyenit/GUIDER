@@ -82,4 +82,43 @@
     }
   }
 }
+#slidehome .carousel-indicators{
+    width: auto;
+    height: auto;
+    text-indent: unset;
+    background: #fff;
+    left: inherit;
+    margin-left: inherit;
+    margin-right: 50px;
+    margin-bottom: 0;
+    color: $default1;
+  li {
+    width: auto;
+    height: auto;
+    text-indent: unset;
+    min-width: 75px;
+    padding: 20px;
+    position: relative;
+    &:hover{
+      color: $default;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 90%;
+      width: 1px;
+      background: #ddd;
+    }
+    &:last-child:after{
+      content: none;
+    }
+  }
+  .active{
+    color: $default;
+  }
+ 
+
+}
 
