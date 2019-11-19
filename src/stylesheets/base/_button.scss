@@ -8,7 +8,17 @@
         border-color: $default;
     }
 }
-
+.btn-default-slide{
+    border-radius: 0;
+    font-weight: 400;
+    background:#fff;
+    transition: all .2s;
+    &:hover{
+        background: $default;
+        color: #fff;
+        border-color: $default;
+    }
+}
 .btn-default{
     background: $default;
     color: #fff;
