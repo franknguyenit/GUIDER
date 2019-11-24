@@ -1,137 +1,39 @@
-.breadcrumb-item+.breadcrumb-item::before {
-    content: "";
-    height: 25px;
-    width: 1px;
-    border-right: 1px solid #fff;
-    position: absolute;
-    top: -5px;
-    left: -15px;
-}
-
-.breakcrumbs-child {
-    background: $red;
-    display: inline-block;
-}
-
-.parent-breakcrumbs {
-    background: #58595b;
-}
-
 .breadcrumb {
-    background-color: transparent;
+    background: rgba(199, 199, 199, 0.839216);
+    border-radius: 0;
     margin: 0;
-    padding: 10px 15px;
+    padding: 10px 15px 5px;
     position: relative;
     li {
-        font-weight: 300;
+        font-weight: 400;
         font-size: rem(16) !important;
         margin-bottom: 0;
         position: relative;
         &.active {
-            color: #fff;
+            color: $default;
+        }
+        span{
+            padding: 0 5px;
+            font-size: 25px;
+            color: $default1;
         }
         a {
-            color: #fff;
             text-decoration: none;
-            padding-right: 35px;
+          
             &:hover {
-                color: $red1;
+                color: $default;
             }
         }
-        .icon-breadcrumb {
-            &::before {
-                content: "";
-                position: absolute;
-                top: -10px;
-                left: -30px;
-                width: 22px;
-                height: 45px;
-                background: url(/images/icon-breakscrums.png) no-repeat;
-                background-position: center;
-            }
-        }
+       
     }
 }
 
-.breadcrumbs {
-    padding: 5px 15px;
-    &::before {
-        position: absolute;
-        left: -35px;
-        top: 0;
-        content: "";
-        width: 36px;
-        height: 35px;
-        background: $red;
-    }
-    &::after {
-        position: absolute;
-        left: -35px;
-        top: 35px;
-        content: "";
-        border-right: 11px solid #3e151f;
-        border-top: 0px solid transparent;
-        border-bottom: 11px solid transparent;
-    }
-    li a {
-        padding-right: 20px;
-    }
-}
 
 @media (min-width: 481px) and (max-width: 767px) {
-    .breakcrumbs-child {
-        width: 100%;
-    }
-    .breadcrumbs {
-        &::before {
-            content: none;
-        }
-        li {
-            width: 100%;
-            a {
-                border-bottom: 1px solid #fff;
-                display: block;
-                padding: 5px;
-            }
-        }
-    }
-    .breadcrumb-item+.breadcrumb-item {
-        padding: 0;
-        &::before {
-            content: none;
-            padding: 0
-        }
-    }
-    .bg-truyenthong {
-        padding: 0!important;
-    }
+   
+  
 }
 
 @media only screen and (max-width: 480px) {
-    .breakcrumbs-child {
-        width: 100%;
-    }
-    .breadcrumbs {
-        &::before {
-            content: none;
-        }
-        li {
-            width: 100%;
-            a {
-                border-bottom: 1px solid #fff;
-                display: block;
-                padding: 5px;
-            }
-        }
-    }
-    .breadcrumb-item+.breadcrumb-item {
-        padding: 0;
-        &::before {
-            content: none;
-            padding: 0
-        }
-    }
-    .bg-truyenthong {
-        padding: 0!important;
-    }
+    
 }

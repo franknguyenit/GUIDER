@@ -173,3 +173,22 @@
   }
 }
 
+.list-team{
+  .slick-dots {
+    bottom: -50px;
+    li {
+      button{
+        background: #fff;
+        border: 2px solid #fff;
+      }
+      
+    }
+  }
+}
+.list-team{
+  .slick-dots li.slick-active button, .slick-dots li:hover button{
+    background: #f58220;
+    border-color: #f58220;
+  }
+}
+

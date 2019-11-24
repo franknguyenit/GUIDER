@@ -47,7 +47,20 @@ class globalSite {
             },
         });
     }
-    static customJs() {}
+    static customJs() {
+        function setMaxheight(item) {
+            var highestBox = 0;
+            item.each(function() {
+                if ($(this).height() > highestBox) {
+                    highestBox = $(this).height();
+                }
+            });
+            item.height(highestBox);
+        }
+        setMaxheight($('.card__service'));
+        setMaxheight($('.card__project-title'));
+        setMaxheight($('.card__about'));
+    }
     static showhidemap() {
         $(".btn-choose").click(function() {
             $(this).addClass("selected");

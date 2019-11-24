@@ -1,0 +1,36 @@
+.card{
+    &__project{
+        transition: all .2s;
+        position: relative;
+        margin-bottom: 25px;
+        &:hover{
+            .card__project-bg-photo, .card__project-content{
+                border-color: $default;
+            }
+
+        }
+    }
+    &__project-content{
+        background: #fff;
+        padding: 25px;
+        text-align: center;
+        border: 2px solid transparent;
+        transition: all .2s;
+        margin: -55px 10% 0;
+        box-shadow: 2px 1px 9px 0px rgba(0, 0, 0, 0.22);
+        h4{
+            color:$default1;
+            font-weight: 700;
+            border-bottom: 1px solid $default1;
+            padding-bottom: 10px;
+        }
+    }
+    &__list_product{
+        box-shadow: 2px 1px 9px 0px rgba(0, 0, 0, 0.22);
+        margin-bottom: 15px;
+    }
+    &__project-bg-photo{
+        border: 2px solid transparent;
+        transition: all .2s;
+    }
+}

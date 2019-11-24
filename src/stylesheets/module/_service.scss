@@ -1,0 +1,40 @@
+.card{
+    &__service{
+        padding: 1.5rem 2rem;
+        border: 4px solid transparent;
+        box-shadow: 2px 0px 7px 1px rgba(132, 129, 129, 0.19);
+        margin-bottom: 25px;
+        transition: all .2s;
+        background: #fff;
+        h3{
+            font-size: 18px;
+            font-weight: 500;
+            color: $default;
+            margin-top: 20px;
+        }
+        &:hover{
+            border: 4px solid $default;
+           
+        }
+        &:hover .card__icon{
+            background: $default;
+        }
+    }
+    &__dot{
+        font-size: 30px;
+        font-weight: 900;
+    }
+    &__icon{
+        border: 6px solid $default1;
+        border-radius: 100%;
+        display: inline-block;
+        padding: 10px;
+        transition: all .2s;
+    }
+    &__description{
+        margin-bottom: 35px;
+    }
+}
+.mb-service{
+    margin-bottom: -70px;
+}

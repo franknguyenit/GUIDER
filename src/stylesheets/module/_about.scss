@@ -1,355 +1,67 @@
-.our-story__wrap {
-    display: flex;
-    align-items: center;
-    .text-bg {
-        h1 {
-            font-family: "commerceB";
-            font-size: 7rem;
-            text-align: right;
-            color: transparent;
-            background: url('../images/bg-text.jpg') 0 0/cover;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-attachment: fixed;
-            white-space: nowrap;
-        }
-    }
-    .text-wrap {
-        padding: 5rem 8rem;
-        text-align: justify;
-        border: 6px solid #801F23;
-        border-left: 0;
+.card{
+    &__about, &__team{
+        border: 2px solid #f58220;
+        padding: 2.2rem;
         position: relative;
-        font-size: 14px;
-        &:before,
-        &:after {
-            content: "";
-            position: absolute;
-            width: 6px;
-            height: 5rem;
-            left: 0;
-            background-color: $red-color;
-        }
-        &:before {
-            top: 0;
-        }
-        &:after {
-            bottom: 0
-        }
-        .newspaper-style{
-            line-height: rem(25);
-        }
-    }
-}
-
-.newspaper-style span {
-    float: left;
-    font-weight: bold;
-    font-size: 3rem;
-    line-height: 3rem;
-    height: 3rem;
-    text-transform: uppercase;
-    margin-left: -3px;
-    padding-right: 5px;
-    font-family: Roboto,sans-serif;
-}
-
-.signature-line {
-    width: 5rem;
-    height: .5rem;
-    display: inline-block;
-    background-color: $red-color;
-}
-
-.our-title h2 {
-    font-family: "commerceB";
-    color: #000;
-    font-size: 2.5rem;
-    line-height: 1;
-}
-
-.our-process {
-    font-family: $ro;
-    .summary {
-        font-size: 13pt;
-    }
-    .col-bg {
-        background: rgb(1, 35, 102);
-        background: linear-gradient(180deg, rgba(1, 35, 102, 1) 0%, rgba(16, 111, 174, 1) 50%, rgba(30, 187, 244, 1) 100%);
-        width: 100%;
-        height: 100%;
-    }
-    .col-right {
-        margin-left: -10.5%
-    }
-    &__timeline {
-        font-size: 12pt;
-    }
-    .year {
-        font-family: "commerceB";
-        color: #fff;
-        border: 2px solid #fff;
-        border-right: 0;
-        width: 4rem;
-        height: 4rem;
-        line-height: 4rem;
-        font-size: 1.5rem;
-        position: relative;
-        &:after {
-            width: 2px;
-            height: 70%;
-            content: "";
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            background-color: #fff;
+        transition: all .2s;
+        h3{
+           color: $default;
+           font-style: italic;
+           font-weight: 600;
+           font-size: rem(20);
+           font-family: 'PT Sans', sans-serif;
+           position: relative;
+           margin-bottom: rem(30);
+           &::before{
+               content: "";
+               position: absolute;
+               bottom: -7px; 
+               left: 0;
+               width: 40px;
+               height: 3px;
+               background: $default1; 
+           }
         }
     }
-    .line {
-        width: 2px;
-        height: calc(100% - 4rem);
+    &__team{
+        box-shadow: 2px 0px 7px 1px rgba(132, 129, 129, 0.19);
+        border-color: transparent;
+        padding: 2.2rem 2.2rem 1rem;
         background: #fff;
-        position: absolute;
-        bottom: 0;
-        left: calc((100% - 40px)/2);
-    }
-}
-
-.square-line {
-    margin: 2rem 0 2rem -13%;
-    .square {
-        width: 10px;
-        height: 10px;
-        display: inline-block;
-        margin: 0 7px;
-        background: #000;
-    }
-}
-
-.our-purpose {
-    background: url('../images/purpose-bg.jpg') bottom/cover no-repeat;
-    font-family: $ro;
-    h2.special-text {
-        font-size: 2.5rem
-    }
-}
-
-.special-text {
-    font-family: "commerceB";
-}
-
-.fw-300 {
-    font-weight: 300;
-}
-
-.our-core {
-    &-values {
-        background-color: #F3F3F3;
-        font-family: $ro;
-        position: relative;
-        h2.special-text {
-            font-size: 2.5rem
-        }
-        .content-text {
-            padding: 5rem 3rem;
-            border: 6px solid $red-color;
-            border-right: 0;
-            position: relative;
-            margin: 7rem 0;
-            &:after {
-                width: 6px;
-                height: 80%;
-                content: "";
-                bottom: 0;
-                position: absolute;
-                right: 0;
-                background-color: $red-color;
+        margin-top: 6px;
+        h3{
+            color: $default1;
+            font-style: inherit;
+            &::before{
+                background: #000; 
+                bottom: -15px;
             }
         }
-        .col-left {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            max-width: 425px;
+        &:hover{
+            border-color: $default;
+            img{
+                border-color: $default1;
+            }
         }
-        .imm-slogan {
-            padding: 8px 0;
-            border-top: 4px solid #262626;
-            border-bottom: 4px solid #262626;
-            font-size: 2.9rem;
-            line-height: 1;
-            white-space: nowrap;
+        
+    }
+    &__detail{
+        font-size: rem(14);
+        font-weight: 700;
+        color:$default1;
+        img{
+            border: 2px solid $default;
         }
     }
-    &__title {
-        max-width: 425px;
-        margin: 0 auto 0 10rem;
-    }
-}
-
-.our-philosophy {
-    background: url("../images/water-bg.jpg") center bottom/100% no-repeat;
-    .content {
-        &-panel {
-            border-left: 1.2rem solid $red-color;
-            padding: 4rem 2rem;
-        }
-        &-text {
-            padding: 2rem;
-        }
-    }
-    &__title {
-        font-size: 2.5rem;
-        position: relative;
-        &:after {
-            content: "";
-            width: 120%;
-            height: 1px;
-            background-color: #801F23;
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            margin-left: -50vw;
-            z-index: 11;
-        }
-    }
-}
-#our-true-story h1{
-   font-size: 10rem;
-}
-
-@media screen and (min-width:1200px) {
-    .our-philosophy .content-text {
-        padding-bottom: 23rem;
-    }
-}
-
-@media screen and (max-width:1199px) {
-    .our-story__wrap {
-        .text-wrap {
-            padding: 5%;
-        }
-        .text-bg h1{
-            font-size: 5rem
-        }
-    }
-    #our-true-story h1 {
-        font-size: 5rem
-    }
-    .our-process .col-right {
-        margin-left: -12.5%;
-    }
-    .our-core-values .content-text {
-        padding: 3rem;
-    }
-    .our-philosophy .content-text {
-        padding-bottom: 10rem;
-    }
-    .our-core-values .imm-slogan {
-        font-size: 2rem;
-    }
-}
-
-@media screen and (max-width:959px) {
-    .our-story__wrap .text-bg h1 {
-        white-space: normal;
-    }
-    .our-process {
-        .summary {
-            font-size: 12pt;
-        }
-        .col-right {
-            margin-left: -14.5%;
-        }
-        .line {
-            left: calc((100% + 6px)/2);
-        }
-    }
-    .our-core-values {
-        .col-left {
-            position: static;
-            max-width: unset;
-        }
-        .imm-slogan {
-            font-size: 3.7rem;
-        }
-        .our-core__title {
-            margin: 3rem auto;
-        }
-        .content-text {
-            margin: 0
-        }
-    }
-}
-
-@media screen and (max-width:767px) {
-    .our-story__wrap {
-        flex-direction: column;
-        .text-bg h1 br {
-            display: none;
-        }
-        .text-wrap:after {
-            height: 80%;
-        }
-    }
-    .our-title h2 {
-        font-size: 2rem;
-    }
-    .our-process .col-right {
-        margin-left: 0;
-    }
-    .our-process {
-        .year {
-            color: #000;
-            border: 2px solid #000;
-            margin: auto;
-        }
-        .line {
-            background: #000;
-            left: calc((100% - 4px)/2);
-        }
-    }
-    .square-line {
-        margin: 1rem 0;
-        .square.bg-white {
-            background-color: #000 !important;
-        }
-        .square:first-child {
-            margin-left: 0
-        }
-    }
-    .our-core-values,
-    .our-purpose {
-        h2.special-text {
-            font-size: 2rem;
-        }
-    }
-    .our-core-values {
-        .content-text {
-            padding: 2rem;
-        }
-        .imm-slogan {
-            font-size: 2.5rem;
-        }
-    }
-    .our-philosophy__title {
-        font-size: 2rem;
-    }
-    .newspaper-style span {
-        font-size: 3rem;
-    }
-    .our-philosophy {
-        .content-text {
-            padding: 0;
-        }
-        .content-panel {
-            padding: 2rem 1rem;
-        }
-    }
-}
-
-@media screen and (max-width:576px) {
-    .our-core-values .imm-slogan {
-        font-size: 6.6vw;
+    &__about-icon{
+        position: absolute;
+        top: -36px;
+        right: -3px;
+        background: #fff;
+        border: 3px solid $default1;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        padding: 8px;
     }
 }

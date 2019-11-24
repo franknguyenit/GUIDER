@@ -1,0 +1,97 @@
+{% extends 'layouts/application.html' %}{% block bodyClass %}class="home-page"{% endblock %} {% block header %}
+{% include "modules/header.html" %} {% endblock %} {% block content %}{% include "modules/banner.html" %}
+
+<section>
+    <div class="container shadow-container">
+        <div class="row ">
+            <div class="breadcrumbs">
+                <ul class="breadcrumb">
+                    <li><a href="/vn/">Trang chủ</a></li>
+                    <li><span aria-hidden="true" class="arrow_carrot-right"></span></li>
+                    <li><a href="/vn/">Tin tức</a></li>
+                    <li><span aria-hidden="true" class="arrow_carrot-right"></span></li>
+                    <li><a href="/vn/">Guider JCS với đội ngũ gồm những thành viên</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row row-0 px-5 py-4 ">
+            <div class="col-md-12 px-5">
+                <header class="entry-header mt-3 mt-md-5 mb-4">
+                    <h1 class="entry-title h2">
+                        05 điều ngộ nhận khi kinh doanh trên airbnb
+                    </h1>
+                </header>
+                <div class="">
+                    <div class="line-detail"></div>
+                    <h4 class="font-weight-bold mb-1"><em>Thông tin bài viết</em></h4>
+                    <ul class="author-detail">
+                        <li>Như Quỳnh</li>
+                        <li>1.2.2019</li>
+                        <li>nguồn: Tuổi trẻ online</li>
+                    </ul>
+                    <div class="line-detail"></div>
+                </div>
+                <div class="entry-content">
+                    <p>Theo số liệu khảo sát của Guider thì có 05 điều mà các chủ nhà (Host) thường bị ngộ nhận khi kinh
+                        doanh trên AirBnB.</p>
+                    <p>Trường hợp này không hoàn đúng vì nếu vào mùa cao điểm và khu vực ít cạnh tranh thì có thể cho
+                        thuê ngày ngắn hạn mang lại thu nhập cao hơn, tuy nhiên nếu rơi vào mùa thấp điểm và khu vực có
+                        nhiều nhà Airbnb thì tỉ lệ kín phòng có thể giảm dẫn đến thu thập từ cho thuê ngắn hạn không
+                        bằng cho thuê dài hạn. Khách ngắn hạn sẽ mang lại cho mình nhiều review hơn, khách dài hạn sẽ
+                        mang lại cho mình thu nhập ổn định để vượt qua mùa thấp điểm.</p>
+                    <p>Đối với các Host đang có ý định thuê 1 căn nhà dài hạn để cho thuê lại ngắn hạn kinh doanh trên
+                        AirBnB thì cần tính toán ROI (Return On Investment – tạm dịch là tỉ lệ lợi nhuận thu được so với
+                        chi phí ban đầu) cho thật kỹ trước khi làm nhé.</p>
+                    <p><img class="w-100" src="images/about.jpg"></p>
+                    <p class="text-right">
+                        <em>Tác giả: <b>Như Quỳnh</b><br>Nguồn: dalat.com.vn</em>
+                    </p>
+                </div>
+                <div>
+                    <div><hr></div>
+                    <div class="d-inline-block">
+                        <h5>Topics/Relate post</h5>
+                        <ul class="relate-post-tag">
+                            <li><a href="#!">rure dolor</a></li>
+                            <li><a href="#!">esse</a></li>
+                            <li><a href="#!">velit</a></li>
+                            <li><a href="#!">rure dolor</a></li>
+                        </ul>
+                    </div>
+                    <div><hr></div>
+                </div>
+                <div class="news-other">
+                    <h4 class="h3 font-weight-bold">Tin liên quan</h4>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card__news-order p-4">
+                                <img class="w-100" src="images/about.jpg">
+                                <h5 class="h4 font-weight-bold mt-4">airbnb ra đời như thế nào?</h5>
+                                <p><a href="#!" class="btn btn-default1">Xem thêm</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card__news-order p-4">
+                                <img class="w-100" src="images/about.jpg">
+                                <h5 class="h4 font-weight-bold mt-4">airbnb ra đời như thế nào?</h5>
+                                <p><a href="#!" class="btn btn-default1">Xem thêm</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card__news-order p-4">
+                                <img class="w-100" src="images/about.jpg">
+                                <h5 class="h4 font-weight-bold mt-4">airbnb ra đời như thế nào?</h5>
+                                <p><a href="#!" class="btn btn-default1">Xem thêm</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4"><a href="#!" class="btn btn-default">Xem thêm</a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section class="py-5 bg-default1"></section>
+{% endblock %}

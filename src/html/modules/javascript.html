@@ -105,22 +105,16 @@
         jsPath: 'javascripts/'
     };
 
-    /*$script(['https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'], 'vendor', function() {
-        $script(['js/parallax.min.js', 'js/animation.gsap.min.js', 'javascripts/app.js'], 'myScript', function() {
-            
-        });
-    });*/
-
     $script([
         'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js',
         'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js',
         'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'
     ], 'vendor', function() {
         $script([
-            '/js/animation.gsap.min.js',
-            '/js/debug.addIndicators.min.js',
-            '/js/parallax.min.js',
-            '/javascripts/app.js'
+            'js/animation.gsap.min.js',
+            'js/debug.addIndicators.min.js',
+            'js/parallax.min.js',
+            'javascripts/app.js'
         ], 'myScript', function() {
             $(".spinnerparent").fadeOut("slow");
         });
@@ -128,17 +122,6 @@
 
     $script.ready('myScript', function() {
 
-        /*if (screen.width < 480) {} else {
-            var z = $('#videoabout').offset().top - 100;
-            var r = $('#footer').offset().top - 100;
-            $(window).scroll(function() {
-                var y = $(window).scrollTop();
-                if (y >= z && y <= r) {
-                    $('#video-about').get(0).play();
-                } else {
-                    $('#video-about').get(0).pause();
-                }
-            });
-        }*/
+        
     });
 </script>

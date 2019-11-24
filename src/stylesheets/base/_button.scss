@@ -2,10 +2,22 @@
     border: 1px solid #6c757d;
     border-radius: 0;
     font-weight: 400;
+    background:#fff;
     &:hover{
         background: $default;
         color: #fff;
         border-color: $default;
+    }
+}
+.btn-default-w1{
+    border: 1px solid #6c757d;
+    border-radius: 0;
+    font-weight: 400;
+    background:#fff;
+    &:hover{
+        background: $default1;
+        color: #fff;
+        border-color: $default1;
     }
 }
 .btn-default-slide{
@@ -19,11 +31,23 @@
         border-color: $default;
     }
 }
+
 .btn-default{
     background: $default;
     color: #fff;
     font-weight: 400;
     font-size: rem(16);
+    &:hover{
+        background: $link-hover-color;
+        color: #fff;
+    }
+}
+.btn-default1{
+    background: $default1;
+    color: #fff;
+    font-weight: 400;
+    font-size: rem(16);
+    border-radius: 0;
     &:hover{
         background: $link-hover-color;
         color: #fff;
