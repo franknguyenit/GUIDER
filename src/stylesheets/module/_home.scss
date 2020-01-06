@@ -66,6 +66,7 @@ body{
     &__list_product{
         box-shadow: 2px 1px 9px 0px rgba(0, 0, 0, 0.22);
         margin-bottom: 15px;
+        position: relative;
     }
     &__product-content{
         background: #fff;
@@ -76,6 +77,13 @@ body{
             font-weight: 700;
         }
     }
+}
+.link-as{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .entry-title{
     font-weight: 700;
